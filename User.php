@@ -26,10 +26,9 @@ class User{
 		$this->createdAt = $createdAt;
 	}
 
+	
 }
-
-
-
-
+$a = new User();
+echo $a->getId();
 
 ?>
