@@ -25,6 +25,7 @@ class Vegetable extends Product{
 		}
 
 	}
+	
 	public function __construct(){
 		$this->actualTime= new DateTime();
 		
