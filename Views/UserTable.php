@@ -9,13 +9,18 @@ $users = require __DIR__."/../Controllers/Users.php";
 	<title>tableu utilisateur</title>
 </head>
 <body>
+
 	<table>
 		<?php foreach ($users as $user): ?>
+
 			<tr>
 				<td>Id :<?= $user["client"]->getId();?></td>
+				<td>create: <?php $user["client"]->getCreatedAt();?> </td>
 				<td>Email : <?= $user["client"]->getEmail();?></td>
 			</tr>
 		<?php endforeach ?>
+
+		
 	</table>
 </body>
 </html>
