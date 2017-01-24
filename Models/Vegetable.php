@@ -12,6 +12,13 @@ class Vegetable extends Product{
 	public function getExpiresAt(){
 		return $this->expiresAt;
 	}
+	public function getProductorName(){
+		return $this->productorName;
+
+	}
+	public function setProductorName($productorName){
+		$this->productorName= $productorName;
+	}
 
 	public function isFresh(){
 		print_r($this->actualTime);
@@ -25,7 +32,7 @@ class Vegetable extends Product{
 		}
 
 	}
-	
+
 	public function __construct(){
 		$this->actualTime= new DateTime();
 		
