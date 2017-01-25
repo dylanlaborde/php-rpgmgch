@@ -4,9 +4,13 @@ class Product{
 	private $id;
 	private $name;
 	private $price;
-/*
-Getter
-*/
+
+	public function __construct($id,$name,$price){
+		$this->setId($id);
+		$this->setName($name);
+		$this->setPrice($price);
+	}
+
 	public function getId(){
 		return $this->id;
 	}
@@ -16,9 +20,7 @@ Getter
 	public function getName(){
 		return $this->name;
 	}
-/*
-Setter
-*/
+
 	public function setPrice($price){
 		$this->price = $price;
 	}
